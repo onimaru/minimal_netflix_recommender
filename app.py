@@ -36,7 +36,7 @@ def show_recommendations(title_token,df=df):
     display_recommendations(list(retrieved_items.keys()),df)
     
     
-st.title("Recomendador Netflix")
-st.header("Os dados usados são do Netflix americano de setembro de 2021. Então a recomendação pode estar desatualizada.")
-title_token = st.text_input('Palavra chave', "Dark")
+st.title("Minimal Netflix Recommender System")
+st.write("Os dados usados são do Netflix americano de setembro de 2021. Então a recomendação pode estar desatualizada.")
+title_token = st.text_input('Palavra chave', "dark")
 show_recommendations(title_token.lower())
